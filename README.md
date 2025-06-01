@@ -1,6 +1,15 @@
-# 🔹 Python Realtime Chat App with Firebase 🔹
+# 🔹 Discooo_Wav 🔹
 
 Aplikasi chat real-time berbasis **Python + Firebase** yang mendukung login/signup, chat pribadi, dan grup publik. Dirancang dengan antarmuka sederhana menggunakan `Tkinter` dan dapat digunakan sebagai dasar pembuatan aplikasi desktop chat sendiri.
+
+## 📦 Tersedia Di
+
+- Pc
+- Laptop
+
+Dalam Tahap Beta ! Kalau ada Bug Report Di [Discord Server](https://www.python.org/downloads/)
+
+##
 
 ## 📦 Fitur Utama
 
