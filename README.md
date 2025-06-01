@@ -16,27 +16,6 @@ Aplikasi chat real-time berbasis **Python + Firebase** yang mendukung login/sign
 
 ---
 
-## 📁 Struktur Firebase
-
-Gunakan Firebase Realtime Database dengan struktur:
-
-/users/{username}:
-password: "hashed-password"
-email: "optional-email"
-lastOnline: timestamp
-
-/chats/pribadi/{user1}_{user2}/:
-[{ sender: user1, text: "pesan", timestamp: ... }]
-
-/chats/komunitas/{groupName}/:
-[{ sender: user2, text: "halo semua", timestamp: ... }]
-
-yaml
-Copy
-Edit
-
----
-
 ## 🔧 Cara Install & Menjalankan
 
 ### 1. Pastikan Python Terinstall
@@ -48,43 +27,29 @@ Edit
 ```bash
 git clone https://github.com/username/realtime-chat-app.git
 cd realtime-chat-app
-3. Install Library yang Dibutuhkan
-bash
-Copy
-Edit
+```
+### 3. Install Library yang Dibutuhkan
+```bash
 pip install firebase-admin python-dotenv
+```
 Jika ingin menggunakan notifikasi suara:
 
-bash
-Copy
-Edit
+```bash
 pip install playsound
+```
 Atau gunakan winsound jika hanya di Windows.
 
-4. Setup Firebase
-Buat project di Firebase Console
-
-Aktifkan Realtime Database
-
-Pilih mode Test
-
-Buat file firebase_config.json dari Firebase Admin SDK dan simpan di folder project
-
-Buat .env dengan isi:
-
-ini
-Copy
-Edit
-FIREBASE_JSON=firebase_config.json
-5. Jalankan Aplikasi
-bash
-Copy
-Edit
+### 4. Jalankan Aplikasi
+```bash
 python app.py
-🖥️ Tentang Script Ini
+```
+
+---
+
+### 🖥️ Tentang Script Ini
 Script utama berbasis Tkinter GUI, dan menghubungkan ke Firebase Realtime Database untuk menyimpan akun pengguna serta chat. Fitur seperti tab navigasi, suara notifikasi, dan validasi akun ditambahkan agar lebih mirip aplikasi modern.
 
-✅ To-Do Selanjutnya
+### ✅ Kemungkinan Update Selanjutnya
  Tambah emoji dan dukungan media
 
  Fitur edit & hapus pesan
@@ -93,16 +58,12 @@ Script utama berbasis Tkinter GUI, dan menghubungkan ke Firebase Realtime Databa
 
  Web versi menggunakan Flask atau React
 
-🤝 Kontribusi
+### 🤝 Kontribusi
 Pull Request, laporan bug, dan saran sangat diterima. Cukup fork repo ini dan buat perubahan yang bermanfaat!
 
 📜 Lisensi
 MIT License © 2025
 
-yaml
-Copy
-Edit
-
----
-
+```yaml
 Kalau Anda ingin saya bantu sekaligus **buat repositori GitHub-nya langsung**, tinggal
+```
